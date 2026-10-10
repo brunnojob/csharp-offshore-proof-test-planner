@@ -1,0 +1,31 @@
+$ bash -e -o pipefail -c dotnet build && dotnet run --no-build -- --self-test && dotnet run --no-build < examples/input.txt
+  Determining projects to restore...
+  Restored /home/runner/work/csharp-offshore-proof-test-planner/csharp-offshore-proof-test-planner/Offshore.csproj (in 86 ms).
+  Offshore -> /home/runner/work/csharp-offshore-proof-test-planner/csharp-offshore-proof-test-planner/bin/Debug/net8.0/Offshore.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:07.12
+Tests passed
+{"Tag":"PSHH101","AveragePfd":0.008276021021526803,"CurrentPfd":0.016954624817999253,"OverdueHours":240,"Priority":0.017419135086985536}
+{"Tag":"LSLL201","AveragePfd":0.007842724532003742,"CurrentPfd":0.016423636961582777,"OverdueHours":220,"Priority":0.01724856849846593}
+{"Tag":"TSHH301","AveragePfd":0.004367238360218351,"CurrentPfd":0.003992010656008516,"OverdueHours":0,"Priority":0.003992010656008516}
+
+$ dotnet run --no-build --
+{"Tag":"PSHH101","AveragePfd":0.008276021021526803,"CurrentPfd":0.016954624817999253,"OverdueHours":240,"Priority":0.017419135086985536}
+{"Tag":"LSLL201","AveragePfd":0.007842724532003742,"CurrentPfd":0.016423636961582777,"OverdueHours":220,"Priority":0.01724856849846593}
+{"Tag":"TSHH301","AveragePfd":0.004367238360218351,"CurrentPfd":0.003992010656008516,"OverdueHours":0,"Priority":0.003992010656008516}
+
+$ dotnet run --no-build --
+Missing input
+
+$ dotnet run --no-build --
+Invalid CSV row
+
+$ dotnet run --no-build -- --unsupported
+Unsupported command arguments
+
+$ dotnet run --no-build --
+Input record too large
