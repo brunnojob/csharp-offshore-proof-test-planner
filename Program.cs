@@ -21,6 +21,7 @@ static class Program
         while ((line = Console.ReadLine()) is not null)
         {
             Require(rows.Count < 100000, "Input capacity exceeded");
+            Require(line.Length <= 8192, "Input record too large");
             string[] fields = line.Split(',');
             Require(fields.Length == columns && fields.All(f => !string.IsNullOrWhiteSpace(f)), "Invalid CSV row");
             rows.Add(fields);
@@ -32,6 +33,7 @@ static class Program
     {
         try
         {
+            Require(args.Length == 0 || args.SequenceEqual(new[] { "--self-test" }), "Unsupported command arguments");
             if (args.SequenceEqual(new[] { "--self-test" })) { Test(); Console.WriteLine("Tests passed"); }
             else Run();
             return 0;
