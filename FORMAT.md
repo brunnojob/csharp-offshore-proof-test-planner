@@ -1,0 +1,1 @@
+CSV: tag,dangerous-undetected-failure-rate-per-hour,proof-test-interval-hours,elapsed-hours,coverage. Only the covered failure portion is modeled. Repair time, common cause, diagnostics and uncovered failures require separate analysis; this is not SIL certification.
