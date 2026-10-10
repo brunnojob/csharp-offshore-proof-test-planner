@@ -1,9 +1,9 @@
 {
   "schema": 1,
   "repository": "brunnojob/csharp-offshore-proof-test-planner",
-  "source_commit": "f3971a648a7bff3661746b283ea7bd9af77d285a",
-  "generated_at": "2026-10-10T02:36:52.795927+00:00",
-  "run_url": "https://github.com/brunnojob/csharp-offshore-proof-test-planner/actions/runs/38017599625",
+  "source_commit": "66004a546fb4d21749a545a7660eb090d0c2558b",
+  "generated_at": "2026-10-10T02:45:05.957532+00:00",
+  "run_url": "https://github.com/brunnojob/csharp-offshore-proof-test-planner/actions/runs/38018091874",
   "inputs_sha256": {
     ".proof/scenarios.json": "e8b45a0fff078feb078b959cb3ae97b18015a92cf6fa35ed8706c0946ee1ddb0",
     "examples/input.txt": "51bbc8db29bfb77b628a3a378b6b9958fd06704e66d92fca6a1d835d64bfd00f"
@@ -23,9 +23,9 @@
       "exit": 0,
       "expected_exit": 0,
       "passed": true,
-      "seconds": 13.832,
-      "output": "  Determining projects to restore...\n  Restored /home/runner/work/csharp-offshore-proof-test-planner/csharp-offshore-proof-test-planner/Offshore.csproj (in 86 ms).\n  Offshore -> /home/runner/work/csharp-offshore-proof-test-planner/csharp-offshore-proof-test-planner/bin/Debug/net8.0/Offshore.dll\n\nBuild succeeded.\n    0 Warning(s)\n    0 Error(s)\n\nTime Elapsed 00:00:07.12\nTests passed\n{\"Tag\":\"PSHH101\",\"AveragePfd\":0.008276021021526803,\"CurrentPfd\":0.016954624817999253,\"OverdueHours\":240,\"Priority\":0.017419135086985536}\n{\"Tag\":\"LSLL201\",\"AveragePfd\":0.007842724532003742,\"CurrentPfd\":0.016423636961582777,\"OverdueHours\":220,\"Priority\":0.01724856849846593}\n{\"Tag\":\"TSHH301\",\"AveragePfd\":0.004367238360218351,\"CurrentPfd\":0.003992010656008516,\"OverdueHours\":0,\"Priority\":0.003992010656008516}\n",
-      "output_sha256": "b666067677ed1ea5a881574c1500ec8d13eb77cb28429dfa8a4baac632422c6a"
+      "seconds": 12.536,
+      "output": "  Determining projects to restore...\n  Restored /home/runner/work/csharp-offshore-proof-test-planner/csharp-offshore-proof-test-planner/Offshore.csproj (in 84 ms).\n  Offshore -> /home/runner/work/csharp-offshore-proof-test-planner/csharp-offshore-proof-test-planner/bin/Debug/net8.0/Offshore.dll\n\nBuild succeeded.\n    0 Warning(s)\n    0 Error(s)\n\nTime Elapsed 00:00:06.67\nTests passed\n{\"Tag\":\"PSHH101\",\"AveragePfd\":0.008276021021526803,\"CurrentPfd\":0.016954624817999253,\"OverdueHours\":240,\"Priority\":0.017419135086985536}\n{\"Tag\":\"LSLL201\",\"AveragePfd\":0.007842724532003742,\"CurrentPfd\":0.016423636961582777,\"OverdueHours\":220,\"Priority\":0.01724856849846593}\n{\"Tag\":\"TSHH301\",\"AveragePfd\":0.004367238360218351,\"CurrentPfd\":0.003992010656008516,\"OverdueHours\":0,\"Priority\":0.003992010656008516}\n",
+      "output_sha256": "a8c108b9387d175aa894c6f6cb6d20fd72821583039f7784d29570fc173ffe3d"
     },
     {
       "display": true,
@@ -39,7 +39,7 @@
       "exit": 0,
       "expected_exit": 0,
       "passed": true,
-      "seconds": 0.803,
+      "seconds": 0.854,
       "output": "{\"Tag\":\"PSHH101\",\"AveragePfd\":0.008276021021526803,\"CurrentPfd\":0.016954624817999253,\"OverdueHours\":240,\"Priority\":0.017419135086985536}\n{\"Tag\":\"LSLL201\",\"AveragePfd\":0.007842724532003742,\"CurrentPfd\":0.016423636961582777,\"OverdueHours\":220,\"Priority\":0.01724856849846593}\n{\"Tag\":\"TSHH301\",\"AveragePfd\":0.004367238360218351,\"CurrentPfd\":0.003992010656008516,\"OverdueHours\":0,\"Priority\":0.003992010656008516}\n",
       "output_sha256": "c077b5174c1f81ae2142263eac44ff64f115216aac2f2821dc1d4fdd7fe2763c"
     },
@@ -55,7 +55,7 @@
       "exit": 2,
       "expected_exit": 2,
       "passed": true,
-      "seconds": 0.954,
+      "seconds": 1.209,
       "output": "Missing input\n",
       "output_sha256": "59dde097c155045b6510b44b5d0ee86176974b3476c8b96718ac676f66134e97"
     },
@@ -71,7 +71,7 @@
       "exit": 2,
       "expected_exit": 2,
       "passed": true,
-      "seconds": 0.752,
+      "seconds": 0.803,
       "output": "Invalid CSV row\n",
       "output_sha256": "64aaf8a3f81772044320e6481a9fe33ac80bfdb41f6deb590512cd62c2cd30b7"
     },
@@ -88,7 +88,7 @@
       "exit": 2,
       "expected_exit": 2,
       "passed": true,
-      "seconds": 0.753,
+      "seconds": 0.803,
       "output": "Unsupported command arguments\n",
       "output_sha256": "a7217611e9bf4e2fd5cbbd1b8b97c5898f154b14da948e9e35008b59b8158bcd"
     },
